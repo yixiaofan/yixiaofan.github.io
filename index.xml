@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://yixiaofan.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Jul 2019 10:01:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://yixiaofan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot实战合集</title>
+      <link>https://yixiaofan.github.io/about/</link>
+      <pubDate>Fri, 05 Jul 2019 10:01:01 +0800</pubDate>
+      
+      <guid>https://yixiaofan.github.io/about/</guid>
+      <description>本项目内容为 《Spring Boot实战合集》系列文章，代码已开源，并持续保持更新。如您觉得该项目对您有用，欢迎点击右上方的 Star 按钮，给予支持！！  个人博客：https://www.codesheep.cn GitHub：https://github.com/hansonwang99  另外所有内容都在我的个人微信公众号 CodeSheep 最先推出，大家可以关注一下，可 长按 或 扫描 下面的 小心心 来获取更多 务实、能看懂、可复现的 原创文。除此之外 提问/进群交流 也可以扫码进行！！！
+  
+数据库/缓存相关  Guava Cache本地缓存在 Spring Boot应用中的实践
+ EVCache缓存在 Spring Boot中的实战
+ Spring Boot应用缓存实践之：Ehcache加持
+ Spring Boot集成 MyBatis和 SQL Server实践
+ Elasticsearch搜索引擎在Spring Boot中的实践
+ 自制一个 elasticsearch-spring-boot-starter
+ Spring Boot项目利用MyBatis Generator进行数据层代码自动生成
+ Mybatis-Plus 真好用（乡村爱情加持）
+  日志相关  Spring Boot日志框架实践  应用监控相关  利用神器 BTrace 追踪线上 Spring Boot应用运行时信息</description>
+    </item>
+    
+  </channel>
+</rss>
