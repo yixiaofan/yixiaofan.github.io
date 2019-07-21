@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "使用hugo搭建个人博客",
     "headline" : "使用hugo搭建个人博客",
-    "description" : "hugo搭建个人博客(静态网站) Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。\n1. 二进制安装（推荐：简单、快速） 到 Hugo Releases 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe） Mac下直接使用 Homebrew 安装：\n brew install hugo  使用hugo version查看安装是否成功 2. 生成站点 使用Hugo快速生成站点，打开cmd使用命令 cd \/d ... 到你想创建的位置，再使用命令\n$ hugo new site myblog  这样就在该目录下生成了初始站点,再在用cmd命令 cd myblog 进入目录\n3. 创建文章 创建一个 about 页面：\n$ hugo new about.md  about.md 自动生成到了 content\/about.md ，打开 about.md 看下：  \x2b\x2b\x2b date = \x26ldquo;2019-06-25T08:36:54-07:00\x26rdquo; draft = true title = \x26ldquo;about\x26rdquo;\n\x2b\x2b\x2b\n正文内容  创建第一篇文章，放到 post 目录，方便之后生成聚合页面。\n$ hugo new post\/first.",
+    "description" : "hugo搭建个人博客(静态网站)  Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。\n \n二进制安装（推荐：简单、快速） 到 Hugo Releases 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe） Mac下直接使用 Homebrew 安装：  brew install hugo  #### 使用 `hugo version` 查看安装是否成功 ## 生成站点 #### 使用Hugo快速生成站点，打开cmd使用命令 `cd \/d ...` 到你想创建的位置，再使用命令  $ hugo new site myblog  #### 这样就在该目录下生成了初始站点,再在用cmd命令 `cd myblog` 进入目录 ## 创建文章 #### 创建一个 `about` 页面：  $ hugo new about.md  #### `about.md` 自动生成到了 `content\/about.md` ，打开 `about.md` 看下：  \x2b\x2b\x2b date = \x222019-06-25T08:36:54-07:00\x22 draft = true title = \x22",
     "inLanguage" : "zh-cn",
     "author" : "易小凡",
     "creator" : "易小凡",
@@ -57,7 +57,7 @@
     "datePublished": "2019-07-21 00:00:00 \x2b0000 UTC",
     "dateModified" : "2019-07-21 00:00:00 \x2b0000 UTC",
     "url" : "https:\/\/yixiaofan.github.io\/2019\/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2\/",
-    "wordCount" : "161",
+    "wordCount" : "165",
     "keywords" : [ "博客","Hugo", "钢铁工厂"]
 }
 </script>
@@ -150,90 +150,97 @@
 
 <h1 id="hugo搭建个人博客-静态网站">hugo搭建个人博客(静态网站)</h1>
 
-<p><strong>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。</strong></p>
+<blockquote>
+<p>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。</p>
+</blockquote>
 
 <hr />
 
-<h2 id="1-二进制安装-推荐-简单-快速">1. 二进制安装（推荐：简单、快速）</h2>
+<p></br></p>
 
-<p><font face="黑体" color=#222222 size=4>到 <a href="https://github.com/spf13/hugo/releases" rel="nofollow noreferrer" target="_blank">Hugo Releases</a> 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe）<br/>
-Mac下直接使用 <font color=#aa4444 size=3>Homebrew</font> 安装：</font></p>
+<h2 id="二进制安装-推荐-简单-快速">二进制安装（推荐：简单、快速）</h2>
 
-<pre><code> brew install hugo 
-</code></pre>
+<h4 id="到-hugo-releases-https-github-com-spf13-hugo-releases-下载对应的操作系统版本的hugo二进制文件-hugo或者hugo-exe">到 <a href="https://github.com/spf13/hugo/releases" rel="nofollow noreferrer" target="_blank">Hugo Releases</a> 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe）</h4>
 
-<h4 id="使用-hugo-version-查看安装是否成功">使用<code>hugo version</code>查看安装是否成功</h4>
+<h4 id="mac下直接使用-font-color-aa4444-homebrew-font-安装-font">Mac下直接使用 <font color=#aa4444>Homebrew</font> 安装：</font></h4>
 
-<h2 id="2-生成站点">2. 生成站点</h2>
+<pre>
+brew install hugo 
+</pre>
+#### 使用 <font color=#aa4444>`hugo version`</font> 查看安装是否成功
 
-<p><font face="黑体" color=#222222 size=4>使用Hugo快速生成站点，打开cmd使用命令 <font color=#aa4444> <code>cd /d ...</code></font> 到你想创建的位置，再使用命令</p>
+## 生成站点
+#### 使用Hugo快速生成站点，打开cmd使用命令 <font color=#aa4444> `cd /d ...`</font> 到你想创建的位置，再使用命令
+<pre>
+$ hugo new site myblog
+</pre>
+#### 这样就在该目录下生成了初始站点,再在用cmd命令 <font color=#aa4444>`cd myblog`</font> 进入目录
 
-<pre><code>$ hugo new site myblog
-</code></pre>
-
-<p>这样就在该目录下生成了初始站点,再在用cmd命令 <font color=#aa4444><code>cd myblog</code></font> 进入目录</p>
-
-<h2 id="3-创建文章">3. 创建文章</h2>
-
-<p><font face="黑体" color=#222222 size=4>创建一个 <font color=#aa4444> <code>about</code></font> 页面：</p>
-
-<pre><code>$ hugo new about.md
-</code></pre>
-
-<p><font color=#aa4444><code>about.md</code></font> 自动生成到了 <font color=#aa4444><code>content/about.md</code></font> ，打开 <font color=#aa4444><code>about.md</code></font> 看下：
+## 创建文章
+#### 创建一个 <font color=#aa4444> `about`</font> 页面：
+<pre>
+$ hugo new about.md
+</pre>
+#### <font color=#aa4444>`about.md`</font> 自动生成到了 <font color=#aa4444>`content/about.md`</font> ，打开 <font color=#aa4444>`about.md`</font> 看下：
 <pre>
 +++
-date = &ldquo;2019-06-25T08:36:54-07:00&rdquo;
+date = "2019-06-25T08:36:54-07:00"
 draft = true
-title = &ldquo;about&rdquo;</p>
+title = "about"
 
-<p>+++</p>
++++
 
-<p>正文内容
+正文内容
 </pre>
-创建第一篇文章，放到 <font color=#aa4444><code>post</code></font> 目录，方便之后生成聚合页面。</p>
+#### 创建第一篇文章，放到 <font color=#aa4444>`post`</font> 目录，方便之后生成聚合页面。
+<pre>
+$ hugo new post/first.md
+</pre>
 
-<pre><code>$ hugo new post/first.md
-</code></pre>
+<h2 id="安装皮肤">安装皮肤</h2>
 
-<h2 id="4-安装皮肤">4. 安装皮肤</h2>
+<h4 id="到-hugo主题-https-themes-gohugo-io-挑选一个心仪的皮肤-比如你觉得-font-color-aa4444-hyde-font-皮肤不错-找到相关的-font-color-aa4444-github-font-地址-创建目录-font-color-aa4444-themes-font-在-font-color-aa4444-themes-font-目录里把皮肤-font-color-aa4444-git-clone-font-下来">到 <a href="https://themes.gohugo.io/" rel="nofollow noreferrer" target="_blank">Hugo主题</a> 挑选一个心仪的皮肤，比如你觉得 <font color=#aa4444><code>Hyde</code></font> 皮肤不错，找到相关的 <font color=#aa4444><code>GitHub</code></font> 地址，创建目录 <font color=#aa4444><code>themes</code></font>，在 <font color=#aa4444><code>themes</code></font> 目录里把皮肤 <font color=#aa4444><code>git clone</code></font> 下来：</h4>
 
-<p>到 <a href="https://themes.gohugo.io/" rel="nofollow noreferrer" target="_blank">Hugo主题</a> 挑选一个心仪的皮肤，比如你觉得 <font color=#aa4444><code>Hyde</code></font> 皮肤不错，找到相关的 <font color=#aa4444><code>GitHub</code></font> 地址，创建目录 <font color=#aa4444><code>themes</code></font>，在 <font color=#aa4444><code>themes</code></font> 目录里把皮肤 <font color=#aa4444><code>git clone</code></font> 下来：
 <pre>
 <font color=#777777 size=3># 创建 themes 目录</font>
 $ cd themes
-$ git clone <a href="https://github.com/spf13/hyde.git" rel="nofollow noreferrer" target="_blank">https://github.com/spf13/hyde.git</a>
-</pre></p>
+$ git clone https://github.com/spf13/hyde.git
+</pre>
 
-<h2 id="5-运行hugo">5. 运行Hugo</h2>
+<h2 id="运行hugo">运行Hugo</h2>
 
-<p>在你的站点根目录执行 <font color=#aa4444><code>Hugo</code></font> 命令进行调试：</p>
+<h4 id="在你的站点根目录执行-font-color-aa4444-hugo-font-命令进行调试">在你的站点根目录执行 <font color=#aa4444><code>Hugo</code></font> 命令进行调试：</h4>
 
-<pre><code>$ hugo server --theme=hyde --buildDrafts
-</code></pre>
+<p><pre>
+$ hugo server &ndash;theme=hyde &ndash;buildDrafts
+</pre>
+#####（注明：v0.15 版本之后，不再需要使用 &ndash;watch 参数了）</p>
 
-<p>（注明：v0.15 版本之后，不再需要使用 &ndash;watch 参数了）</br>
-浏览器里打开： <font color=#aa4444><code>http://localhost:1313</code></font></p>
+<h4 id="浏览器里打开-font-color-aa4444-http-localhost-1313-font">浏览器里打开： <font color=#aa4444><code>http://localhost:1313</code></font></h4>
 
-<h2 id="6-部署">6. 部署</h2>
+<h2 id="部署">部署</h2>
 
-<p>假设你需要部署在 <font color=#aa4444><code>GitHub Pages</code></font> 上，首先在GitHub上创建一个Repository，命名为：<font color=#aa4444><code>coderzh.github.io</code></font> （coderzh替换为你的github用户名）。</br>
-在站点根目录执行 <font color=#aa4444><code>Hugo</code></font> 命令生成最终页面：</p>
+<h4 id="假设你需要部署在-font-color-aa4444-github-pages-font-上-首先在github上创建一个repository-命名为-font-color-aa4444-coderzh-github-io-font-coderzh替换为你的github用户名">假设你需要部署在 <font color=#aa4444><code>GitHub Pages</code></font> 上，首先在GitHub上创建一个Repository，命名为：<font color=#aa4444><code>coderzh.github.io</code></font> （coderzh替换为你的github用户名）。</h4>
 
-<pre><code>$ hugo --theme=hyde --baseUrl=&quot;http://coderzh.github.io/&quot;
-</code></pre>
+<h4 id="在站点根目录执行-font-color-aa4444-hugo-font-命令生成最终页面">在站点根目录执行 <font color=#aa4444><code>Hugo</code></font> 命令生成最终页面：</h4>
 
-<p>（注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 <font color=#aa4444><code>draft=true</code></font> 再重新生成。）</br>
-如果一切顺利，所有静态页面都会生成到 <font color=#aa4444><code>public</code></font> 目录，将pubilc目录里所有文件 <font color=#aa4444><code>push</code></font> 到刚创建的Repository的 <font color=#aa4444><code>master</code></font> 分支。
-<pre>
+<p><pre>
+$ hugo &ndash;theme=hyde &ndash;baseUrl=&ldquo;<a href="http://coderzh.github.io/&quot;" rel="nofollow noreferrer" target="_blank">http://coderzh.github.io/&quot;</a>
+</pre>
+####（注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 <font color=#aa4444><code>draft=true</code></font> 再重新生成。）</p>
+
+<h4 id="如果一切顺利-所有静态页面都会生成到-font-color-aa4444-public-font-目录-将pubilc目录里所有文件-font-color-aa4444-push-font-到刚创建的repository的-font-color-aa4444-master-font-分支">如果一切顺利，所有静态页面都会生成到 <font color=#aa4444><code>public</code></font> 目录，将pubilc目录里所有文件 <font color=#aa4444><code>push</code></font> 到刚创建的Repository的 <font color=#aa4444><code>master</code></font> 分支。</h4>
+
+<p><pre>
 $ cd public
 $ git init
 $ git remote add origin <a href="https://github.com/coderzh/coderzh.github.io.git" rel="nofollow noreferrer" target="_blank">https://github.com/coderzh/coderzh.github.io.git</a>
 $ git add -A
 $ git commit -m &ldquo;first commit&rdquo;
 $ git push -u origin master
-</pre>
-浏览器里访问：<font color=#aa4444><code>http://coderzh.github.io/</code></font></p>
+</pre></p>
+
+<h4 id="浏览器里访问-font-color-aa4444-http-coderzh-github-io-font">浏览器里访问：<font color=#aa4444><code>http://coderzh.github.io/</code></font></h4>
 
     </div>
 
