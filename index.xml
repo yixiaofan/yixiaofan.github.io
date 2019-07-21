@@ -1,36 +1,914 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>我的第一个博客</title>
+    <title>钢铁工厂 on 钢铁工厂</title>
     <link>https://yixiaofan.github.io/</link>
-    <description>Recent content on 我的第一个博客</description>
+    <description>Recent content in 钢铁工厂 on 钢铁工厂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 05 Jul 2019 10:01:01 +0800</lastBuildDate>
-    
-	<atom:link href="https://yixiaofan.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Spring Boot实战合集</title>
+      <title>使用hugo搭建个人博客</title>
+      <link>https://yixiaofan.github.io/2019/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yixiaofan.github.io/2019/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>
+
+&lt;h1 id=&#34;hugo搭建个人博客-静态网站&#34;&gt;hugo搭建个人博客(静态网站)&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;1-二进制安装-推荐-简单-快速&#34;&gt;1. 二进制安装（推荐：简单、快速）&lt;/h2&gt;
+
+&lt;p&gt;&lt;font face=&#34;黑体&#34; color=#222222 size=4&gt;到 &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Hugo Releases&lt;/a&gt; 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe）&lt;br/&gt;
+Mac下直接使用 &lt;font color=#aa4444 size=3&gt;Homebrew&lt;/font&gt; 安装：&lt;/font&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; brew install hugo 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;使用-hugo-version-查看安装是否成功&#34;&gt;使用&lt;code&gt;hugo version&lt;/code&gt;查看安装是否成功&lt;/h4&gt;
+
+&lt;h2 id=&#34;2-生成站点&#34;&gt;2. 生成站点&lt;/h2&gt;
+
+&lt;p&gt;&lt;font face=&#34;黑体&#34; color=#222222 size=4&gt;使用Hugo快速生成站点，打开cmd使用命令 &lt;font color=#aa4444&gt; &lt;code&gt;cd /d ...&lt;/code&gt;&lt;/font&gt; 到你想创建的位置，再使用命令&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new site myblog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样就在该目录下生成了初始站点,再在用cmd命令 &lt;font color=#aa4444&gt;&lt;code&gt;cd myblog&lt;/code&gt;&lt;/font&gt; 进入目录&lt;/p&gt;
+
+&lt;h2 id=&#34;3-创建文章&#34;&gt;3. 创建文章&lt;/h2&gt;
+
+&lt;p&gt;&lt;font face=&#34;黑体&#34; color=#222222 size=4&gt;创建一个 &lt;font color=#aa4444&gt; &lt;code&gt;about&lt;/code&gt;&lt;/font&gt; 页面：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new about.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;font color=#aa4444&gt;&lt;code&gt;about.md&lt;/code&gt;&lt;/font&gt; 自动生成到了 &lt;font color=#aa4444&gt;&lt;code&gt;content/about.md&lt;/code&gt;&lt;/font&gt; ，打开 &lt;font color=#aa4444&gt;&lt;code&gt;about.md&lt;/code&gt;&lt;/font&gt; 看下：
+&lt;pre&gt;
++++
+date = &amp;ldquo;2019-06-25T08:36:54-07:00&amp;rdquo;
+draft = true
+title = &amp;ldquo;about&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;p&gt;正文内容
+&lt;/pre&gt;
+创建第一篇文章，放到 &lt;font color=#aa4444&gt;&lt;code&gt;post&lt;/code&gt;&lt;/font&gt; 目录，方便之后生成聚合页面。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new post/first.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;4-安装皮肤&#34;&gt;4. 安装皮肤&lt;/h2&gt;
+
+&lt;p&gt;到 &lt;a href=&#34;https://themes.gohugo.io/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Hugo主题&lt;/a&gt; 挑选一个心仪的皮肤，比如你觉得 &lt;font color=#aa4444&gt;&lt;code&gt;Hyde&lt;/code&gt;&lt;/font&gt; 皮肤不错，找到相关的 &lt;font color=#aa4444&gt;&lt;code&gt;GitHub&lt;/code&gt;&lt;/font&gt; 地址，创建目录 &lt;font color=#aa4444&gt;&lt;code&gt;themes&lt;/code&gt;&lt;/font&gt;，在 &lt;font color=#aa4444&gt;&lt;code&gt;themes&lt;/code&gt;&lt;/font&gt; 目录里把皮肤 &lt;font color=#aa4444&gt;&lt;code&gt;git clone&lt;/code&gt;&lt;/font&gt; 下来：
+&lt;pre&gt;
+&lt;font color=#777777 size=3&gt;# 创建 themes 目录&lt;/font&gt;
+$ cd themes
+$ git clone &lt;a href=&#34;https://github.com/spf13/hyde.git&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/spf13/hyde.git&lt;/a&gt;
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;5-运行hugo&#34;&gt;5. 运行Hugo&lt;/h2&gt;
+
+&lt;p&gt;在你的站点根目录执行 &lt;font color=#aa4444&gt;&lt;code&gt;Hugo&lt;/code&gt;&lt;/font&gt; 命令进行调试：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo server --theme=hyde --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;（注明：v0.15 版本之后，不再需要使用 &amp;ndash;watch 参数了）&lt;/br&gt;
+浏览器里打开： &lt;font color=#aa4444&gt;&lt;code&gt;http://localhost:1313&lt;/code&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;6-部署&#34;&gt;6. 部署&lt;/h2&gt;
+
+&lt;p&gt;假设你需要部署在 &lt;font color=#aa4444&gt;&lt;code&gt;GitHub Pages&lt;/code&gt;&lt;/font&gt; 上，首先在GitHub上创建一个Repository，命名为：&lt;font color=#aa4444&gt;&lt;code&gt;coderzh.github.io&lt;/code&gt;&lt;/font&gt; （coderzh替换为你的github用户名）。&lt;/br&gt;
+在站点根目录执行 &lt;font color=#aa4444&gt;&lt;code&gt;Hugo&lt;/code&gt;&lt;/font&gt; 命令生成最终页面：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo --theme=hyde --baseUrl=&amp;quot;http://coderzh.github.io/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;（注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 &lt;font color=#aa4444&gt;&lt;code&gt;draft=true&lt;/code&gt;&lt;/font&gt; 再重新生成。）&lt;/br&gt;
+如果一切顺利，所有静态页面都会生成到 &lt;font color=#aa4444&gt;&lt;code&gt;public&lt;/code&gt;&lt;/font&gt; 目录，将pubilc目录里所有文件 &lt;font color=#aa4444&gt;&lt;code&gt;push&lt;/code&gt;&lt;/font&gt; 到刚创建的Repository的 &lt;font color=#aa4444&gt;&lt;code&gt;master&lt;/code&gt;&lt;/font&gt; 分支。
+&lt;pre&gt;
+$ cd public
+$ git init
+$ git remote add origin &lt;a href=&#34;https://github.com/coderzh/coderzh.github.io.git&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/coderzh/coderzh.github.io.git&lt;/a&gt;
+$ git add -A
+$ git commit -m &amp;ldquo;first commit&amp;rdquo;
+$ git push -u origin master
+&lt;/pre&gt;
+浏览器里访问：&lt;font color=#aa4444&gt;&lt;code&gt;http://coderzh.github.io/&lt;/code&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
       <link>https://yixiaofan.github.io/about/</link>
       <pubDate>Fri, 05 Jul 2019 10:01:01 +0800</pubDate>
       
       <guid>https://yixiaofan.github.io/about/</guid>
-      <description>markdown的使用 MdEditor的功能列表演示 标题H1 标题H2 标题H3 标题H4 标题H5 标题H5 字符效果和横线等 删除线 删除线（开启识别HTML标签时）
-斜体字 斜体字
-粗体 粗体
-粗斜体 粗斜体
-上标：X2，下标：O2
-缩写(同HTML的abbr标签) &amp;gt; 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启
-The HTML specification is maintained by the W3C.
-引用 Blockquotes  引用文本 Blockquotes
- 引用的行内混合 Blockquotes
- 引用：如果想要插入空白换行即&amp;lt;br /&amp;gt;标签，在插入处先键入两个以上的空格然后回车即可，普通链接。
- 锚点与链接 Links 普通链接 普通链接带标题 直接链接：https://www.mdeditor.com 锚点链接
-mailto:test.test@gmail.com GFM a-tail link @pandao 邮箱地址自动链接 test.test@gmail.com www@vip.qq.com &amp;gt; @pandao
-多语言代码高亮 Codes 行内代码 Inline code 执行命令：npm install marked
-缩进风格 即缩进四个空格，也做为实现类似 &amp;lt;pre&amp;gt; 预格式化文本 ( Preformatted Text ) 的功能。</description>
+      <description>&lt;p&gt;Hugo is the &lt;strong&gt;world’s fastest framework for building websites&lt;/strong&gt;. It is written in Go.&lt;/p&gt;
+
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/russross/blackfriday&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/russross/blackfriday&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spring Boot实战合集</title>
+      <link>https://yixiaofan.github.io/2019/first-blog/</link>
+      <pubDate>Fri, 05 Jul 2019 10:01:01 +0800</pubDate>
+      
+      <guid>https://yixiaofan.github.io/2019/first-blog/</guid>
+      <description>
+
+&lt;h1 id=&#34;markdown的使用&#34;&gt;markdown的使用&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://yixiaofan.github.io/markdown.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;mdeditor的功能列表演示&#34;&gt;MdEditor的功能列表演示&lt;/h2&gt;
+
+&lt;h1 id=&#34;标题h1&#34;&gt;标题H1&lt;/h1&gt;
+
+&lt;h2 id=&#34;标题h2&#34;&gt;标题H2&lt;/h2&gt;
+
+&lt;h3 id=&#34;标题h3&#34;&gt;标题H3&lt;/h3&gt;
+
+&lt;h4 id=&#34;标题h4&#34;&gt;标题H4&lt;/h4&gt;
+
+&lt;h5 id=&#34;标题h5&#34;&gt;标题H5&lt;/h5&gt;
+
+&lt;h6 id=&#34;标题h5-1&#34;&gt;标题H5&lt;/h6&gt;
+
+&lt;h3 id=&#34;字符效果和横线等&#34;&gt;字符效果和横线等&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;del&gt;删除线&lt;/del&gt; &lt;s&gt;删除线（开启识别HTML标签时）&lt;/s&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;斜体字&lt;/em&gt;      &lt;em&gt;斜体字&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;粗体&lt;/strong&gt;  &lt;strong&gt;粗体&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;粗斜体&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;&lt;em&gt;粗斜体&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;上标：X&lt;sub&gt;2&lt;/sub&gt;，下标：O&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;缩写(同HTML的abbr标签)&lt;/strong&gt;
+&amp;gt; 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启&lt;/p&gt;
+
+&lt;p&gt;The &lt;abbr title=&#34;Hyper Text Markup Language&#34;&gt;HTML&lt;/abbr&gt; specification is maintained by the &lt;abbr title=&#34;World Wide Web Consortium&#34;&gt;W3C&lt;/abbr&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;引用-blockquotes&#34;&gt;引用 Blockquotes&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;引用文本 Blockquotes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;引用的行内混合 Blockquotes&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;引用：如果想要插入空白换行&lt;code&gt;即&amp;lt;br /&amp;gt;标签&lt;/code&gt;，在插入处先键入两个以上的空格然后回车即可，&lt;a href=&#34;https://www.mdeditor.com/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;普通链接&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;锚点与链接-links&#34;&gt;锚点与链接 Links&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.mdeditor.com/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;普通链接&lt;/a&gt;
+&lt;a href=&#34;https://www.mdeditor.com/&#34; title=&#34;普通链接带标题&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;普通链接带标题&lt;/a&gt;
+直接链接：&lt;a href=&#34;https://www.mdeditor.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;https://www.mdeditor.com&lt;/a&gt;
+&lt;a href=&#34;https://www.mdeditor.com/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;锚点链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;mailto:test.test@gmail.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;mailto:test.test@gmail.com&lt;/a&gt;
+GFM a-tail link @pandao
+邮箱地址自动链接 test.test@gmail.com  www@vip.qq.com
+&amp;gt; @pandao&lt;/p&gt;
+
+&lt;h3 id=&#34;多语言代码高亮-codes&#34;&gt;多语言代码高亮 Codes&lt;/h3&gt;
+
+&lt;h4 id=&#34;行内代码-inline-code&#34;&gt;行内代码 Inline code&lt;/h4&gt;
+
+&lt;p&gt;执行命令：&lt;code&gt;npm install marked&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;缩进风格&#34;&gt;缩进风格&lt;/h4&gt;
+
+&lt;p&gt;即缩进四个空格，也做为实现类似 &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; 预格式化文本 ( Preformatted Text ) 的功能。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+    echo &amp;quot;Hello world!&amp;quot;;
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;预格式化文本：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;js代码&#34;&gt;JS代码&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function test() {
+	console.log(&amp;quot;Hello world!&amp;quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;html-代码-html-codes&#34;&gt;HTML 代码 HTML codes&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;mate charest=&amp;quot;utf-8&amp;quot; /&amp;gt;
+        &amp;lt;meta name=&amp;quot;keywords&amp;quot; content=&amp;quot;Editor.md, Markdown, Editor&amp;quot; /&amp;gt;
+        &amp;lt;title&amp;gt;Hello world!&amp;lt;/title&amp;gt;
+        &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;
+            body{font-size:14px;color:#444;font-family: &amp;quot;Microsoft Yahei&amp;quot;, Tahoma, &amp;quot;Hiragino Sans GB&amp;quot;, Arial;background:#fff;}
+            ul{list-style: none;}
+            img{border:none;vertical-align: middle;}
+        &amp;lt;/style&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &amp;lt;h1 class=&amp;quot;text-xxl&amp;quot;&amp;gt;Hello world!&amp;lt;/h1&amp;gt;
+        &amp;lt;p class=&amp;quot;text-green&amp;quot;&amp;gt;Plain text&amp;lt;/p&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;图片-images&#34;&gt;图片 Images&lt;/h3&gt;
+
+&lt;p&gt;图片加链接 (Image + Link)：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.mdeditor.com/images/logos/markdown.png&#34; title=&#34;markdown&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://www.mdeditor.com/images/logos/markdown.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Follow your heart.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;列表-lists&#34;&gt;列表 Lists&lt;/h3&gt;
+
+&lt;h4 id=&#34;无序列表-减号-unordered-lists&#34;&gt;无序列表（减号）Unordered Lists (-)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;列表一&lt;/li&gt;
+&lt;li&gt;列表二&lt;/li&gt;
+&lt;li&gt;列表三&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;无序列表-星号-unordered-lists&#34;&gt;无序列表（星号）Unordered Lists (*)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;列表一&lt;/li&gt;
+&lt;li&gt;列表二&lt;/li&gt;
+&lt;li&gt;列表三&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;无序列表-加号和嵌套-unordered-lists&#34;&gt;无序列表（加号和嵌套）Unordered Lists (+)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;列表一&lt;/li&gt;
+&lt;li&gt;列表二
+
+&lt;ul&gt;
+&lt;li&gt;列表二-1&lt;/li&gt;
+&lt;li&gt;列表二-2&lt;/li&gt;
+&lt;li&gt;列表二-3&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;列表三
+
+&lt;ul&gt;
+&lt;li&gt;列表一&lt;/li&gt;
+&lt;li&gt;列表二&lt;/li&gt;
+&lt;li&gt;列表三&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;有序列表-ordered-lists&#34;&gt;有序列表 Ordered Lists (-)&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;第一行&lt;/li&gt;
+&lt;li&gt;第二行&lt;/li&gt;
+&lt;li&gt;第三行&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;gfm-task-list&#34;&gt;GFM task list&lt;/h4&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; GFM task list 1&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; GFM task list 2&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; GFM task list 3
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; GFM task list 3-1&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; GFM task list 3-2&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; GFM task list 3-3&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; GFM task list 4
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; GFM task list 4-1&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; GFM task list 4-2&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;绘制表格-tables&#34;&gt;绘制表格 Tables&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;项目&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;价格&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;数量&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;计算机&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$1600&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;手机&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;管线&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;234&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Function name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;help()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Display the help window.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;destroy()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Destroy your computer!&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Left-Aligned&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Center Aligned&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Right Aligned&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;col 3 is&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;some wordy text&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$1600&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;col 2 is&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;centered&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$12&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;zebra stripes&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;are neat&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Computer&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$1600&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Phone&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$12&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Pipe&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;特殊符号-html-entities-codes&#34;&gt;特殊符号 HTML Entities Codes&lt;/h4&gt;
+
+&lt;p&gt;&amp;copy; &amp;amp;  &amp;uml; &amp;trade; &amp;iexcl; &amp;pound;
+&amp;amp; &amp;lt; &amp;gt; &amp;yen; &amp;euro; &amp;reg; &amp;plusmn; &amp;para; &amp;sect; &amp;brvbar; &amp;macr; &amp;laquo; &amp;middot;&lt;/p&gt;
+
+&lt;p&gt;X&amp;sup2; Y&amp;sup3; &amp;frac34; &amp;frac14;  &amp;times;  &amp;divide;   &amp;raquo;&lt;/p&gt;
+
+&lt;p&gt;18&amp;ordm;C  &amp;quot;  &amp;apos;&lt;/p&gt;
+
+&lt;p&gt;[========]&lt;/p&gt;
+
+&lt;h3 id=&#34;emoji表情&#34;&gt;Emoji表情 😃&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Blockquotes ⭐️&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;gfm-task-lists-emoji-fontawesome-icon-emoji-editormd-logo-emoji-editormd-logo-5x&#34;&gt;GFM task lists &amp;amp; Emoji &amp;amp; fontAwesome icon emoji &amp;amp; editormd logo emoji :editormd-logo-5x:&lt;/h4&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; 😃 @mentions, 😃 #refs, [links](), &lt;strong&gt;formatting&lt;/strong&gt;, and &lt;del&gt;tags&lt;/del&gt; supported :editormd-logo:;&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; [ ] 😃 this is a complete item 😃;&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; []this is an incomplete item &lt;a href=&#34;#&#34;&gt;test link&lt;/a&gt; :fa-star: @pandao;&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; [ ]this is an incomplete item :fa-star: :fa-gear:;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; 😃 this is an incomplete item &lt;a href=&#34;#&#34;&gt;test link&lt;/a&gt; :fa-star: :fa-gear:;&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; 😃 this is  :fa-star: :fa-gear: an incomplete item &lt;a href=&#34;#&#34;&gt;test link&lt;/a&gt;;&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;反斜杠-escape&#34;&gt;反斜杠 Escape&lt;/h4&gt;
+
+&lt;p&gt;*literal asterisks*&lt;/p&gt;
+
+&lt;p&gt;[========]&lt;/p&gt;
+
+&lt;h3 id=&#34;科学公式-tex-katex&#34;&gt;科学公式 TeX(KaTeX)&lt;/h3&gt;
+
+&lt;p&gt;$$E=mc^2$$&lt;/p&gt;
+
+&lt;p&gt;行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。&lt;/p&gt;
+
+&lt;p&gt;$$x &amp;gt; y$$&lt;/p&gt;
+
+&lt;p&gt;$$(\sqrt{3x-1}+(1+x)^2)$$&lt;/p&gt;
+
+&lt;p&gt;$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$&lt;/p&gt;
+
+&lt;p&gt;多行公式：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-math&#34;&gt;\displaystyle
+\left( \sum\_{k=1}^n a\_k b\_k \right)^2
+\leq
+\left( \sum\_{k=1}^n a\_k^2 \right)
+\left( \sum\_{k=1}^n b\_k^2 \right)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-katex&#34;&gt;\displaystyle
+    \frac{1}{
+        \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
+        \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
+        1+\frac{e^{-6\pi}}
+        {1+\frac{e^{-8\pi}}
+         {1+\cdots} }
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;f(x) = \int_{-\infty}^\infty
+    \hat f(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;分页符-page-break&#34;&gt;分页符 Page break&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Print Test: Ctrl + P&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;[========]&lt;/p&gt;
+
+&lt;h3 id=&#34;绘制流程图-flowchart&#34;&gt;绘制流程图 Flowchart&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-flow&#34;&gt;st=&amp;gt;start: 用户登陆
+op=&amp;gt;operation: 登陆操作
+cond=&amp;gt;condition: 登陆成功 Yes or No?
+e=&amp;gt;end: 进入后台
+
+st-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;op
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;[========]&lt;/p&gt;
+
+&lt;h3 id=&#34;绘制序列图-sequence-diagram&#34;&gt;绘制序列图 Sequence Diagram&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-seq&#34;&gt;Andrew-&amp;gt;China: Says Hello
+Note right of China: China thinks\nabout it
+China--&amp;gt;Andrew: How are you?
+Andrew-&amp;gt;&amp;gt;China: I am good thanks!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;end&#34;&gt;End&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://yixiaofan.github.io/2014/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yixiaofan.github.io/2014/creating-a-new-theme/</guid>
+      <description>
+
+&lt;h1 id=&#34;the-algorithms-java&#34;&gt;The Algorithms - Java&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.paypal.me/TheAlgorithms/100&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/Donate-PayPal-green.svg&#34; alt=&#34;Donate&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;NOTE: A &lt;a href=&#34;https://github.com/TheAlgorithms/Java/tree/Development&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Development&lt;/a&gt; branch is made for this repo where we are trying to migrate the existing project to a Java project structure. You can switch to &lt;a href=&#34;https://github.com/TheAlgorithms/Java/tree/Development&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Development&lt;/a&gt; branch for contributions. Please refer &lt;a href=&#34;https://github.com/TheAlgorithms/Java/issues/474&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;this issue&lt;/a&gt; for more info.&lt;/p&gt;
+
+&lt;h3 id=&#34;all-algorithms-implemented-in-java-for-education&#34;&gt;All algorithms implemented in Java (for education)&lt;/h3&gt;
+
+&lt;p&gt;These are for demonstration purposes only. There are many implementations of sorts in the Java standard library that are much better for performance reasons.&lt;/p&gt;
+
+&lt;h2 id=&#34;sort-algorithms&#34;&gt;Sort Algorithms&lt;/h2&gt;
+
+&lt;h3 id=&#34;bubble&#34;&gt;Bubble&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bubblesort-edited-color.svg/220px-Bubblesort-edited-color.svg.png&#34; alt=&#34;alt text&#34; title=&#34;Bubble Sort&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&#34;https://en.wikipedia.org/wiki/Bubble_sort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;: Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Properties&lt;/strong&gt;
+* Worst case performance    O(n^2)
+* Best case performance    O(n)
+* Average case performance    O(n^2)&lt;/p&gt;
+
+&lt;h5 id=&#34;view-the-algorithm-in-action-bubble-toptal&#34;&gt;View the algorithm in &lt;a href=&#34;https://www.toptal.com/developers/sorting-algorithms/bubble-sort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;action&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h3 id=&#34;insertion&#34;&gt;Insertion&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/7/7e/Insertionsort-edited.png&#34; alt=&#34;alt text&#34; title=&#34;Insertion Sort&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&#34;https://en.wikipedia.org/wiki/Insertion_sort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;: Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+In the figure, each bar represents an element of an array that needs to be sorted. What happens at the first intersection of the top most and second top most bars is to swap these elements, represented by bars, because the second element has a higher precedence than the first element does. By repeating this method, insertion sort completes sorting.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Properties&lt;/strong&gt;
+* Worst case performance    O(n^2)
+* Best case performance    O(n)
+* Average case performance    O(n^2)&lt;/p&gt;
+
+&lt;h5 id=&#34;view-the-algorithm-in-action-insertion-toptal&#34;&gt;View the algorithm in &lt;a href=&#34;https://www.toptal.com/developers/sorting-algorithms/insertion-sort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;action&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h3 id=&#34;merge&#34;&gt;Merge&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif&#34; alt=&#34;alt text&#34; title=&#34;Merge Sort&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&#34;https://en.wikipedia.org/wiki/Merge_sort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;: In computer science, merge sort (also commonly spelt mergesort) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the implementation preserves the input order of equal elements in the sorted output. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Properties&lt;/strong&gt;
+* Worst case performance    O(n log n) (typical)
+* Best case performance    O(n log n)
+* Average case performance    O(n log n)&lt;/p&gt;
+
+&lt;h5 id=&#34;view-the-algorithm-in-action-merge-toptal&#34;&gt;View the algorithm in &lt;a href=&#34;https://www.toptal.com/developers/sorting-algorithms/merge-sort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;action&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h3 id=&#34;quick&#34;&gt;Quick&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif&#34; alt=&#34;alt text&#34; title=&#34;Quick Sort&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&#34;https://en.wikipedia.org/wiki/Quicksort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;: Quicksort (sometimes called partition-exchange sort) is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Properties&lt;/strong&gt;
+* Worst case performance    O(n^2)
+* Best case performance    O(n log n) or O(n) with three-way partition
+* Average case performance    O(n log n)&lt;/p&gt;
+
+&lt;h5 id=&#34;view-the-algorithm-in-action-quick-toptal&#34;&gt;View the algorithm in &lt;a href=&#34;https://www.toptal.com/developers/sorting-algorithms/quick-sort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;action&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h3 id=&#34;selection&#34;&gt;Selection&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Selection_sort_animation.gif/250px-Selection_sort_animation.gif&#34; alt=&#34;alt text&#34; title=&#34;Selection Sort Sort&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&#34;https://en.wikipedia.org/wiki/Selection_sort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;: The algorithm divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Properties&lt;/strong&gt;
+* Worst case performance    O(n^2)
+* Best case performance    O(n^2)
+* Average case performance    O(n^2)&lt;/p&gt;
+
+&lt;h5 id=&#34;view-the-algorithm-in-action-selection-toptal&#34;&gt;View the algorithm in &lt;a href=&#34;https://www.toptal.com/developers/sorting-algorithms/selection-sort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;action&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h3 id=&#34;shell&#34;&gt;Shell&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif&#34; alt=&#34;alt text&#34; title=&#34;Shell Sort&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&#34;https://en.wikipedia.org/wiki/Shellsort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;:  Shellsort is a generalization of insertion sort that allows the exchange of items that are far apart.  The idea is to arrange the list of elements so that, starting anywhere, considering every nth element gives a sorted list.  Such a list is said to be h-sorted.  Equivalently, it can be thought of as h interleaved lists, each individually sorted.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Properties&lt;/strong&gt;
+* Worst case performance O(nlog2 2n)
+* Best case performance O(n log n)
+* Average case performance depends on gap sequence&lt;/p&gt;
+
+&lt;h5 id=&#34;view-the-algorithm-in-action-shell-toptal&#34;&gt;View the algorithm in &lt;a href=&#34;https://www.toptal.com/developers/sorting-algorithms/shell-sort&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;action&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h3 id=&#34;time-complexity-graphs&#34;&gt;Time-Complexity Graphs&lt;/h3&gt;
+
+&lt;p&gt;Comparing the complexity of sorting algorithms (Bubble Sort, Insertion Sort, Selection Sort)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/prateekiiest/Python/blob/master/sorts/sortinggraphs.png&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Complexity Graphs&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;search-algorithms&#34;&gt;Search Algorithms&lt;/h2&gt;
+
+&lt;h3 id=&#34;linear&#34;&gt;Linear&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tutorialspoint.com/data_structures_algorithms/images/linear_search.gif&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&#34;https://en.wikipedia.org/wiki/Linear_search&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;: linear search or sequential search is a method for finding a target value within a list. It sequentially checks each element of the list for the target value until a match is found or until all the elements have been searched.
+  The linear search runs in at the worst linear time and makes at most n comparisons, where n is the length of the list.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Properties&lt;/strong&gt;
+* Worst case performance    O(n)
+* Best case performance    O(1)
+* Average case performance    O(n)
+* Worst case space complexity    O(1) iterative&lt;/p&gt;
+
+&lt;h5 id=&#34;view-the-algorithm-in-action-linear-tutorialspoint&#34;&gt;View the algorithm in &lt;a href=&#34;https://www.tutorialspoint.com/data_structures_algorithms/linear_search_algorithm.htm&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;action&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h3 id=&#34;binary&#34;&gt;Binary&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/f/f7/Binary_search_into_array.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&#34;https://en.wikipedia.org/wiki/Binary_search_algorithm&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;: Binary search, also known as half-interval search or logarithmic search, is a search algorithm that finds the position of a target value within a sorted array. It compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Properties&lt;/strong&gt;
+* Worst case performance    O(log n)
+* Best case performance    O(1)
+* Average case performance    O(log n)
+* Worst case space complexity    O(1)&lt;/p&gt;
+
+&lt;h5 id=&#34;view-the-algorithm-in-action-binary-tutorialspoint&#34;&gt;View the algorithm in &lt;a href=&#34;https://www.tutorialspoint.com/data_structures_algorithms/binary_search_algorithm.htm&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;action&lt;/a&gt;&lt;/h5&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;links-to-the-rest-of-the-algorithms&#34;&gt;Links to the rest of the algorithms&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Conversions&lt;/th&gt;
+&lt;th&gt;Dynamic Programming&lt;/th&gt;
+&lt;th&gt;Ciphers&lt;/th&gt;
+&lt;th&gt;Miscellaneous&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;Conversions/AnyBaseToAnyBase.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Any Base to Any Base&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;Dynamic%20Programming/CoinChange.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Coin Change&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;ciphers/Caesar.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Caesar&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;misc/heap_sort.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Heap Sort&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;Conversions/AnyBaseToDecimal.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Any Base to Decimal&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;Dynamic%20Programming/EggDropping.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Egg Dropping&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;ciphers/ColumnarTranspositionCipher.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Columnar Transposition Cipher&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;misc/PalindromicPrime.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Palindromic Prime Checker&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;Conversions/BinaryToDecimal.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Binary to Decimal&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;Dynamic%20Programming/Fibonacci.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Fibonacci&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;ciphers/RSA.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;RSA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;More soon&amp;hellip;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;Conversions/BinaryToHexadecimal.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Binary to HexaDecimal&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;Dynamic%20Programming/KadaneAlgorithm.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Kadane Algorithm&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;more coming soon&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;Conversions/BinaryToOctal.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Binary to Octal&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;Dynamic%20Programming/Knapsack.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Knapsack&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;Conversions/DecimalToAnyBase.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Decimal To Any Base&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;Dynamic%20Programming/LongestCommonSubsequence.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Longest Common Subsequence&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;Conversions/DecimalToBinary.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Decimal To Binary&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;Dynamic%20Programming/LongestIncreasingSubsequence.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Longest Increasing Subsequence&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;Conversions/DecimalToHexaDecimal.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Decimal To Hexadecimal&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;Dynamic%20Programming/RodCutting.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Rod Cutting&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;and much more&amp;hellip;&lt;/td&gt;
+&lt;td&gt;and more&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;data-structures&#34;&gt;Data Structures&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Graphs&lt;/th&gt;
+&lt;th&gt;Heaps&lt;/th&gt;
+&lt;th&gt;Lists&lt;/th&gt;
+&lt;th&gt;Queues&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Graphs/BFS.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;BFS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Heaps/EmptyHeapException.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Empty Heap Exception&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Lists/CircleLinkedList.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Circle Linked List&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Queues/GenericArrayListQueue.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Generic Array List Queue&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Graphs/DFS.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;DFS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Heaps/Heap.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Heap&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Lists/DoublyLinkedList.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Doubly Linked List&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Queues/Queues.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Queues&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Graphs/Graphs.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Graphs&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Heaps/HeapElement.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Heap Element&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Lists/SinglyLinkedList.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Singly Linked List&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Graphs/KruskalsAlgorithm.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Kruskals Algorithm&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Heaps/MaxHeap.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Max Heap&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Lists/CursorLinkedList.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;CursorLinkedList&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Graphs/MatrixGraphs.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Matrix Graphs&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Heaps/MinHeap.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Min Heap&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Graphs/PrimMST.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;PrimMST&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Stacks&lt;/th&gt;
+&lt;th&gt;Trees&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Stacks/NodeStack.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Node Stack&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Trees/AVLTree.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;AVL Tree&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Stacks/StackOfLinkedList.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Stack of Linked List&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Trees/BinaryTree.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Binary Tree&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Stacks/StackArray.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Array Stack&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;And much more&amp;hellip;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;DataStructures/Stacks/StackArrayList.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;ArrayList Stack&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;DataStructures/Bags/Bag.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Bags&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;DataStructures/Buffers/CircularBuffer.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Buffer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;DataStructures/HashMap/Hashing/HashMap.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;HashMap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;DataStructures/Matrix/Matrix.java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Matrix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

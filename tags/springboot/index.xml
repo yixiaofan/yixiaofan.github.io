@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Springboot on 钢铁工厂</title>
+    <link>https://yixiaofan.github.io/tags/springboot/</link>
+    <description>Recent content in Springboot on 钢铁工厂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 05 Jul 2019 10:01:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://yixiaofan.github.io/tags/springboot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot实战合集</title>
+      <link>https://yixiaofan.github.io/2019/first-blog/</link>
+      <pubDate>Fri, 05 Jul 2019 10:01:01 +0800</pubDate>
+      
+      <guid>https://yixiaofan.github.io/2019/first-blog/</guid>
+      <description>markdown的使用 MdEditor的功能列表演示 标题H1 标题H2 标题H3 标题H4 标题H5 标题H5 字符效果和横线等 删除线 删除线（开启识别HTML标签时）
+斜体字 斜体字
+粗体 粗体
+粗斜体 粗斜体
+上标：X2，下标：O2
+缩写(同HTML的abbr标签) &amp;gt; 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启
+The HTML specification is maintained by the W3C.
+引用 Blockquotes  引用文本 Blockquotes
+ 引用的行内混合 Blockquotes
+ 引用：如果想要插入空白换行即&amp;lt;br /&amp;gt;标签，在插入处先键入两个以上的空格然后回车即可，普通链接。
+ 锚点与链接 Links 普通链接 普通链接带标题 直接链接：https://www.mdeditor.com 锚点链接
+mailto:test.test@gmail.com GFM a-tail link @pandao 邮箱地址自动链接 test.test@gmail.com www@vip.qq.com &amp;gt; @pandao
+多语言代码高亮 Codes 行内代码 Inline code 执行命令：npm install marked
+缩进风格 即缩进四个空格，也做为实现类似 &amp;lt;pre&amp;gt; 预格式化文本 ( Preformatted Text ) 的功能。</description>
+    </item>
+    
+  </channel>
+</rss>

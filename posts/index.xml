@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 钢铁工厂</title>
+    <link>https://yixiaofan.github.io/posts/</link>
+    <description>Recent content in Posts on 钢铁工厂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yixiaofan.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用hugo搭建个人博客</title>
+      <link>https://yixiaofan.github.io/2019/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yixiaofan.github.io/2019/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>hugo搭建个人博客(静态网站) Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
+1. 二进制安装（推荐：简单、快速） 到 Hugo Releases 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe） Mac下直接使用 Homebrew 安装：
+ brew install hugo  使用hugo version查看安装是否成功 2. 生成站点 使用Hugo快速生成站点，打开cmd使用命令 cd /d ... 到你想创建的位置，再使用命令
+$ hugo new site myblog  这样就在该目录下生成了初始站点,再在用cmd命令 cd myblog 进入目录
+3. 创建文章 创建一个 about 页面：
+$ hugo new about.md  about.md 自动生成到了 content/about.md ，打开 about.md 看下：  +++ date = &amp;ldquo;2019-06-25T08:36:54-07:00&amp;rdquo; draft = true title = &amp;ldquo;about&amp;rdquo;
++++
+正文内容  创建第一篇文章，放到 post 目录，方便之后生成聚合页面。
+$ hugo new post/first.</description>
+    </item>
+    
+    <item>
+      <title>Spring Boot实战合集</title>
+      <link>https://yixiaofan.github.io/2019/first-blog/</link>
+      <pubDate>Fri, 05 Jul 2019 10:01:01 +0800</pubDate>
+      
+      <guid>https://yixiaofan.github.io/2019/first-blog/</guid>
+      <description>markdown的使用 MdEditor的功能列表演示 标题H1 标题H2 标题H3 标题H4 标题H5 标题H5 字符效果和横线等 删除线 删除线（开启识别HTML标签时）
+斜体字 斜体字
+粗体 粗体
+粗斜体 粗斜体
+上标：X2，下标：O2
+缩写(同HTML的abbr标签) &amp;gt; 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启
+The HTML specification is maintained by the W3C.
+引用 Blockquotes  引用文本 Blockquotes
+ 引用的行内混合 Blockquotes
+ 引用：如果想要插入空白换行即&amp;lt;br /&amp;gt;标签，在插入处先键入两个以上的空格然后回车即可，普通链接。
+ 锚点与链接 Links 普通链接 普通链接带标题 直接链接：https://www.mdeditor.com 锚点链接
+mailto:test.test@gmail.com GFM a-tail link @pandao 邮箱地址自动链接 test.test@gmail.com www@vip.qq.com &amp;gt; @pandao
+多语言代码高亮 Codes 行内代码 Inline code 执行命令：npm install marked
+缩进风格 即缩进四个空格，也做为实现类似 &amp;lt;pre&amp;gt; 预格式化文本 ( Preformatted Text ) 的功能。</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://yixiaofan.github.io/2014/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yixiaofan.github.io/2014/creating-a-new-theme/</guid>
+      <description>The Algorithms - Java 
+NOTE: A Development branch is made for this repo where we are trying to migrate the existing project to a Java project structure. You can switch to Development branch for contributions. Please refer this issue for more info.
+All algorithms implemented in Java (for education) These are for demonstration purposes only. There are many implementations of sorts in the Java standard library that are much better for performance reasons.</description>
+    </item>
+    
+  </channel>
+</rss>
