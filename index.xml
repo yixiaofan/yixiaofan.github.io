@@ -87,7 +87,7 @@ $ git clone https://github.com/spf13/hyde.git
 $ hugo server --theme=hyde --buildDrafts
 &lt;/pre&gt;
 
-&lt;p&gt;####（注明：v0.15 版本之后，不再需要使用 &amp;ndash;watch 参数了）&lt;/p&gt;
+&lt;h4 id=&#34;注明-v0-15-版本之后-不再需要使用-watch-参数了&#34;&gt;（注明：v0.15 版本之后，不再需要使用 &amp;ndash;watch 参数了）&lt;/h4&gt;
 
 &lt;h4 id=&#34;浏览器里打开-font-color-aa4444-http-localhost-1313-font&#34;&gt;浏览器里打开： &lt;font color=#aa4444&gt;&lt;code&gt;http://localhost:1313&lt;/code&gt;&lt;/font&gt;&lt;/h4&gt;
 
@@ -101,7 +101,7 @@ $ hugo server --theme=hyde --buildDrafts
 $ hugo --theme=hyde --baseUrl=&#34;http://coderzh.github.io/&#34;
 &lt;/pre&gt;
 
-&lt;p&gt;####（注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 &lt;font color=#aa4444&gt;&lt;code&gt;draft=true&lt;/code&gt;&lt;/font&gt; 再重新生成。）&lt;/p&gt;
+&lt;h4 id=&#34;注意-以上命令并不会生成草稿页面-如果未生成任何文章-请去掉文章头部的-font-color-aa4444-draft-true-font-再重新生成&#34;&gt;（注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 &lt;font color=#aa4444&gt;&lt;code&gt;draft=true&lt;/code&gt;&lt;/font&gt; 再重新生成。）&lt;/h4&gt;
 
 &lt;h4 id=&#34;如果一切顺利-所有静态页面都会生成到-font-color-aa4444-public-font-目录-将pubilc目录里所有文件-font-color-aa4444-push-font-到刚创建的repository的-font-color-aa4444-master-font-分支&#34;&gt;如果一切顺利，所有静态页面都会生成到 &lt;font color=#aa4444&gt;&lt;code&gt;public&lt;/code&gt;&lt;/font&gt; 目录，将pubilc目录里所有文件 &lt;font color=#aa4444&gt;&lt;code&gt;push&lt;/code&gt;&lt;/font&gt; 到刚创建的Repository的 &lt;font color=#aa4444&gt;&lt;code&gt;master&lt;/code&gt;&lt;/font&gt; 分支。&lt;/h4&gt;
 
