@@ -16,15 +16,9 @@
       <guid>https://yixiaofan.github.io/2019/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>
 
-&lt;h1 id=&#34;hugo搭建个人博客-静态网站&#34;&gt;hugo搭建个人博客(静态网站)&lt;/h1&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;二进制安装-推荐-简单-快速&#34;&gt;二进制安装（推荐：简单、快速）&lt;/h2&gt;
 
@@ -35,21 +29,29 @@
 &lt;pre&gt;
 brew install hugo 
 &lt;/pre&gt;
-#### 使用 &lt;font color=#aa4444&gt;`hugo version`&lt;/font&gt; 查看安装是否成功
 
-## 生成站点
-#### 使用Hugo快速生成站点，打开cmd使用命令 &lt;font color=#aa4444&gt; `cd /d ...`&lt;/font&gt; 到你想创建的位置，再使用命令
+&lt;h4 id=&#34;使用-font-color-aa4444-hugo-version-font-查看安装是否成功&#34;&gt;使用 &lt;font color=#aa4444&gt;&lt;code&gt;hugo version&lt;/code&gt;&lt;/font&gt; 查看安装是否成功&lt;/h4&gt;
+
+&lt;h2 id=&#34;生成站点&#34;&gt;生成站点&lt;/h2&gt;
+
+&lt;h4 id=&#34;使用hugo快速生成站点-打开cmd使用命令-font-color-aa4444-cd-d-font-到你想创建的位置-再使用命令&#34;&gt;使用Hugo快速生成站点，打开cmd使用命令 &lt;font color=#aa4444&gt; &lt;code&gt;cd /d ...&lt;/code&gt;&lt;/font&gt; 到你想创建的位置，再使用命令&lt;/h4&gt;
+
 &lt;pre&gt;
 $ hugo new site myblog
 &lt;/pre&gt;
-#### 这样就在该目录下生成了初始站点,再在用cmd命令 &lt;font color=#aa4444&gt;`cd myblog`&lt;/font&gt; 进入目录
 
-## 创建文章
-#### 创建一个 &lt;font color=#aa4444&gt; `about`&lt;/font&gt; 页面：
+&lt;h4 id=&#34;这样就在该目录下生成了初始站点-再在用cmd命令-font-color-aa4444-cd-myblog-font-进入目录&#34;&gt;这样就在该目录下生成了初始站点,再在用cmd命令 &lt;font color=#aa4444&gt;&lt;code&gt;cd myblog&lt;/code&gt;&lt;/font&gt; 进入目录&lt;/h4&gt;
+
+&lt;h2 id=&#34;创建文章&#34;&gt;创建文章&lt;/h2&gt;
+
+&lt;h4 id=&#34;创建一个-font-color-aa4444-about-font-页面&#34;&gt;创建一个 &lt;font color=#aa4444&gt; &lt;code&gt;about&lt;/code&gt;&lt;/font&gt; 页面：&lt;/h4&gt;
+
 &lt;pre&gt;
 $ hugo new about.md
 &lt;/pre&gt;
-#### &lt;font color=#aa4444&gt;`about.md`&lt;/font&gt; 自动生成到了 &lt;font color=#aa4444&gt;`content/about.md`&lt;/font&gt; ，打开 &lt;font color=#aa4444&gt;`about.md`&lt;/font&gt; 看下：
+
+&lt;h4 id=&#34;font-color-aa4444-about-md-font-自动生成到了-font-color-aa4444-content-about-md-font-打开-font-color-aa4444-about-md-font-看下&#34;&gt;&lt;font color=#aa4444&gt;&lt;code&gt;about.md&lt;/code&gt;&lt;/font&gt; 自动生成到了 &lt;font color=#aa4444&gt;&lt;code&gt;content/about.md&lt;/code&gt;&lt;/font&gt; ，打开 &lt;font color=#aa4444&gt;&lt;code&gt;about.md&lt;/code&gt;&lt;/font&gt; 看下：&lt;/h4&gt;
+
 &lt;pre&gt;
 +++
 date = &#34;2019-06-25T08:36:54-07:00&#34;
@@ -60,7 +62,9 @@ title = &#34;about&#34;
 
 正文内容
 &lt;/pre&gt;
-#### 创建第一篇文章，放到 &lt;font color=#aa4444&gt;`post`&lt;/font&gt; 目录，方便之后生成聚合页面。
+
+&lt;h4 id=&#34;创建第一篇文章-放到-font-color-aa4444-post-font-目录-方便之后生成聚合页面&#34;&gt;创建第一篇文章，放到 &lt;font color=#aa4444&gt;&lt;code&gt;post&lt;/code&gt;&lt;/font&gt; 目录，方便之后生成聚合页面。&lt;/h4&gt;
+
 &lt;pre&gt;
 $ hugo new post/first.md
 &lt;/pre&gt;

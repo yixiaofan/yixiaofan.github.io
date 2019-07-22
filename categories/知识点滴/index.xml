@@ -17,9 +17,8 @@
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://yixiaofan.github.io/2019/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>hugo搭建个人博客(静态网站)  Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
- 
-二进制安装（推荐：简单、快速） 到 Hugo Releases 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe） Mac下直接使用 Homebrew 安装：  brew install hugo  #### 使用 `hugo version` 查看安装是否成功 ## 生成站点 #### 使用Hugo快速生成站点，打开cmd使用命令 `cd /d ...` 到你想创建的位置，再使用命令  $ hugo new site myblog  #### 这样就在该目录下生成了初始站点,再在用cmd命令 `cd myblog` 进入目录 ## 创建文章 #### 创建一个 `about` 页面：  $ hugo new about.md  #### `about.md` 自动生成到了 `content/about.md` ，打开 `about.md` 看下：  +++ date = &#34;2019-06-25T08:36:54-07:00&#34; draft = true title = &#34;</description>
+      <description>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
+ 二进制安装（推荐：简单、快速） 到 Hugo Releases 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe） Mac下直接使用 Homebrew 安装：  brew install hugo  使用 hugo version 查看安装是否成功 生成站点 使用Hugo快速生成站点，打开cmd使用命令 cd /d ... 到你想创建的位置，再使用命令  $ hugo new site myblog  这样就在该目录下生成了初始站点,再在用cmd命令 cd myblog 进入目录 创建文章 创建一个 about 页面：  $ hugo new about.md  about.md 自动生成到了 content/about.md ，打开 about.md 看下：  +++ date = &#34;2019-06-25T08:36:54-07:00&#34; draft = true title = &#34;about&#34; +++ 正文内容  创建第一篇文章，放到 post 目录，方便之后生成聚合页面。  $ hugo new post/first.</description>
     </item>
     
     <item>

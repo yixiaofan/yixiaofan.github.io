@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "使用hugo搭建个人博客",
     "headline" : "使用hugo搭建个人博客",
-    "description" : "hugo搭建个人博客(静态网站)  Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。\n \n二进制安装（推荐：简单、快速） 到 Hugo Releases 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe） Mac下直接使用 Homebrew 安装：  brew install hugo  #### 使用 `hugo version` 查看安装是否成功 ## 生成站点 #### 使用Hugo快速生成站点，打开cmd使用命令 `cd \/d ...` 到你想创建的位置，再使用命令  $ hugo new site myblog  #### 这样就在该目录下生成了初始站点,再在用cmd命令 `cd myblog` 进入目录 ## 创建文章 #### 创建一个 `about` 页面：  $ hugo new about.md  #### `about.md` 自动生成到了 `content\/about.md` ，打开 `about.md` 看下：  \x2b\x2b\x2b date = \x222019-06-25T08:36:54-07:00\x22 draft = true title = \x22",
+    "description" : "Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。\n 二进制安装（推荐：简单、快速） 到 Hugo Releases 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe） Mac下直接使用 Homebrew 安装：  brew install hugo  使用 hugo version 查看安装是否成功 生成站点 使用Hugo快速生成站点，打开cmd使用命令 cd \/d ... 到你想创建的位置，再使用命令  $ hugo new site myblog  这样就在该目录下生成了初始站点,再在用cmd命令 cd myblog 进入目录 创建文章 创建一个 about 页面：  $ hugo new about.md  about.md 自动生成到了 content\/about.md ，打开 about.md 看下：  \x2b\x2b\x2b date = \x222019-06-25T08:36:54-07:00\x22 draft = true title = \x22about\x22 \x2b\x2b\x2b 正文内容  创建第一篇文章，放到 post 目录，方便之后生成聚合页面。  $ hugo new post\/first.",
     "inLanguage" : "zh-cn",
     "author" : "易小凡",
     "creator" : "易小凡",
@@ -57,7 +57,7 @@
     "datePublished": "2019-07-21 00:00:00 \x2b0000 UTC",
     "dateModified" : "2019-07-21 00:00:00 \x2b0000 UTC",
     "url" : "https:\/\/yixiaofan.github.io\/2019\/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2\/",
-    "wordCount" : "165",
+    "wordCount" : "156",
     "keywords" : [ "博客","Hugo", "钢铁工厂"]
 }
 </script>
@@ -148,15 +148,9 @@
 
           
 
-<h1 id="hugo搭建个人博客-静态网站">hugo搭建个人博客(静态网站)</h1>
-
 <blockquote>
 <p>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。</p>
 </blockquote>
-
-<hr />
-
-<p></br></p>
 
 <h2 id="二进制安装-推荐-简单-快速">二进制安装（推荐：简单、快速）</h2>
 
@@ -167,21 +161,29 @@
 <pre>
 brew install hugo 
 </pre>
-#### 使用 <font color=#aa4444>`hugo version`</font> 查看安装是否成功
 
-## 生成站点
-#### 使用Hugo快速生成站点，打开cmd使用命令 <font color=#aa4444> `cd /d ...`</font> 到你想创建的位置，再使用命令
+<h4 id="使用-font-color-aa4444-hugo-version-font-查看安装是否成功">使用 <font color=#aa4444><code>hugo version</code></font> 查看安装是否成功</h4>
+
+<h2 id="生成站点">生成站点</h2>
+
+<h4 id="使用hugo快速生成站点-打开cmd使用命令-font-color-aa4444-cd-d-font-到你想创建的位置-再使用命令">使用Hugo快速生成站点，打开cmd使用命令 <font color=#aa4444> <code>cd /d ...</code></font> 到你想创建的位置，再使用命令</h4>
+
 <pre>
 $ hugo new site myblog
 </pre>
-#### 这样就在该目录下生成了初始站点,再在用cmd命令 <font color=#aa4444>`cd myblog`</font> 进入目录
 
-## 创建文章
-#### 创建一个 <font color=#aa4444> `about`</font> 页面：
+<h4 id="这样就在该目录下生成了初始站点-再在用cmd命令-font-color-aa4444-cd-myblog-font-进入目录">这样就在该目录下生成了初始站点,再在用cmd命令 <font color=#aa4444><code>cd myblog</code></font> 进入目录</h4>
+
+<h2 id="创建文章">创建文章</h2>
+
+<h4 id="创建一个-font-color-aa4444-about-font-页面">创建一个 <font color=#aa4444> <code>about</code></font> 页面：</h4>
+
 <pre>
 $ hugo new about.md
 </pre>
-#### <font color=#aa4444>`about.md`</font> 自动生成到了 <font color=#aa4444>`content/about.md`</font> ，打开 <font color=#aa4444>`about.md`</font> 看下：
+
+<h4 id="font-color-aa4444-about-md-font-自动生成到了-font-color-aa4444-content-about-md-font-打开-font-color-aa4444-about-md-font-看下"><font color=#aa4444><code>about.md</code></font> 自动生成到了 <font color=#aa4444><code>content/about.md</code></font> ，打开 <font color=#aa4444><code>about.md</code></font> 看下：</h4>
+
 <pre>
 +++
 date = "2019-06-25T08:36:54-07:00"
@@ -192,7 +194,9 @@ title = "about"
 
 正文内容
 </pre>
-#### 创建第一篇文章，放到 <font color=#aa4444>`post`</font> 目录，方便之后生成聚合页面。
+
+<h4 id="创建第一篇文章-放到-font-color-aa4444-post-font-目录-方便之后生成聚合页面">创建第一篇文章，放到 <font color=#aa4444><code>post</code></font> 目录，方便之后生成聚合页面。</h4>
+
 <pre>
 $ hugo new post/first.md
 </pre>
