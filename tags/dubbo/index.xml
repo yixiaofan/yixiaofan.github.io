@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dubbo on 钢铁工厂</title>
+    <link>https://yixiaofan.github.io/tags/dubbo/</link>
+    <description>Recent content in dubbo on 钢铁工厂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 27 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yixiaofan.github.io/tags/dubbo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CMall商城项目</title>
+      <link>https://yixiaofan.github.io/2019/cmall/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yixiaofan.github.io/2019/cmall/</guid>
+      <description> CMall商城 简介 本项目采用前后端分离的方式实现，前端使用webpack快速搭建的Vue框架,后端使用maven项目管理和SSM框架完成。本地测试完成后，把项目放在阿里云服务器上(现在服务器已经过期),服务器示意图如下： 使用技术  JQuery：使用最广泛的JavaScript框架 iView：基于 Vue.js 的高质量 UI 组件库 MySQL：最流行的关系型数据库管理系统 dubbo：分布式服务框架 redis：缓存数据库 solr：搜索服务器 VSFTPD：网络文件共享 nginx：高性能HTTP服务器和反向代理服务器  预览图 </description>
+    </item>
+    
+  </channel>
+</rss>

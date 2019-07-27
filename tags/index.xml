@@ -6,10 +6,55 @@
     <description>Recent content in Tags on 钢铁工厂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yixiaofan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SSM</title>
+      <link>https://yixiaofan.github.io/tags/ssm/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yixiaofan.github.io/tags/ssm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vue</title>
+      <link>https://yixiaofan.github.io/tags/vue/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yixiaofan.github.io/tags/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dubbo</title>
+      <link>https://yixiaofan.github.io/tags/dubbo/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yixiaofan.github.io/tags/dubbo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>solr</title>
+      <link>https://yixiaofan.github.io/tags/solr/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yixiaofan.github.io/tags/solr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>商城</title>
+      <link>https://yixiaofan.github.io/tags/%E5%95%86%E5%9F%8E/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yixiaofan.github.io/tags/%E5%95%86%E5%9F%8E/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hugo</title>
