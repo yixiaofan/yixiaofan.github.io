@@ -16,12 +16,10 @@
       <guid>https://yixiaofan.github.io/2019/cmall/</guid>
       <description>
 
-&lt;h1 id=&#34;div-align-center-cmall商城-div&#34;&gt;&lt;div align=center&gt;CMall商城&lt;/div&gt;&lt;/h1&gt;
-
 &lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 
 &lt;p&gt;本项目采用前后端分离的方式实现，&lt;a href=&#34;https://github.com/yixiaofan/CMall&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;前端&lt;/a&gt;使用webpack快速搭建的Vue框架,&lt;a href=&#34;https://github.com/yixiaofan/CMall-java&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;后端&lt;/a&gt;使用maven项目管理和SSM框架完成。本地测试完成后，把项目放在阿里云服务器上(现在服务器已经过期),服务器示意图如下：
-&lt;img src=&#34;http://note.youdao.com/noteshare?id=20622af3b8f81ff5d8bf69bed47c445f&#34; alt=&#34;系统运行流程&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://note.youdao.com/ynoteshare1/index.html?id=20622af3b8f81ff5d8bf69bed47c445f&amp;amp;type=note&#34; alt=&#34;系统运行流程&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;使用技术&#34;&gt;使用技术&lt;/h2&gt;
 
@@ -40,7 +38,7 @@
 
 &lt;p&gt;&lt;img src=&#34;http://note.youdao.com/noteshare?id=2d290cebf7700c3f288b8bfc385bcfab&#34; alt=&#34;PC端首页&#34; /&gt;
 &lt;img src=&#34;http://note.youdao.com/noteshare?id=118025682a392ef55d9d9ec10b87eb54&#34; alt=&#34;移动端首页&#34; /&gt;
-&lt;img src=&#34;http://note.youdao.com/noteshare?id=5493b4d81293e6e94234b54dbbd2b5a7&#34; alt=&#34;搜索页面&#34; /&gt;
+&lt;img src=&#34;https://note.youdao.com/ynoteshare1/index.html?id=5493b4d81293e6e94234b54dbbd2b5a7&amp;amp;type=note&#34; alt=&#34;搜索页面&#34; /&gt;
 &lt;img src=&#34;http://note.youdao.com/noteshare?id=4800512338407067b66a0ae69fca1843&#34; alt=&#34;商品详情&#34; /&gt;
 &lt;img src=&#34;http://note.youdao.com/noteshare?id=f1fadddc2a6e387bb89621e56d515403&#34; alt=&#34;提交订单&#34; /&gt;
 &lt;img src=&#34;http://note.youdao.com/noteshare?id=e2416d43b5ecf46ec09e3b64c2f815bf&#34; alt=&#34;支付页面&#34; /&gt;
