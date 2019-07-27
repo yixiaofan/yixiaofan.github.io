@@ -24,14 +24,14 @@
 &lt;h2 id=&#34;使用技术&#34;&gt;使用技术&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;JQuery：使用最广泛的JavaScript框架&lt;/li&gt;
-&lt;li&gt;iView：基于 Vue.js 的高质量 UI 组件库&lt;/li&gt;
-&lt;li&gt;MySQL：最流行的关系型数据库管理系统&lt;/li&gt;
-&lt;li&gt;dubbo：分布式服务框架&lt;/li&gt;
-&lt;li&gt;redis：缓存数据库&lt;/li&gt;
-&lt;li&gt;solr：搜索服务器&lt;/li&gt;
-&lt;li&gt;VSFTPD：网络文件共享&lt;/li&gt;
-&lt;li&gt;nginx：高性能HTTP服务器和反向代理服务器&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jquery/jquery&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;JQuery&lt;/a&gt;：使用最广泛的JavaScript框架&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/iview/iview&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;iView&lt;/a&gt;：基于 Vue.js 的高质量 UI 组件库&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mysqljs/mysql&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;MySQL&lt;/a&gt;：最流行的关系型数据库管理系统&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/apache/dubbo&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Dubbo&lt;/a&gt;：分布式服务框架&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/antirez/redis&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Redis&lt;/a&gt;：缓存数据库&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/apache/lucene-solr&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Solr&lt;/a&gt;：搜索服务器&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://baike.baidu.com/item/vsftpd/5254770?fr=aladdin&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;VSFTPD&lt;/a&gt;：网络文件共享&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://baike.baidu.com/item/nginx/3817705?fr=aladdin&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Nginx&lt;/a&gt;：高性能HTTP服务器和反向代理服务器&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;预览图&#34;&gt;预览图&lt;/h2&gt;
