@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 钢铁工厂</title>
+    <title>Posts on 机器工厂</title>
     <link>https://yixiaofan.github.io/posts/</link>
-    <description>Recent content in Posts on 钢铁工厂</description>
+    <description>Recent content in Posts on 机器工厂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 27 Jul 2019 00:00:00 +0000</lastBuildDate>
@@ -31,12 +31,12 @@
     </item>
     
     <item>
-      <title>Spring Boot实战合集</title>
+      <title>markdown基本语法</title>
       <link>https://yixiaofan.github.io/2019/first-blog/</link>
       <pubDate>Fri, 05 Jul 2019 10:01:01 +0800</pubDate>
       
       <guid>https://yixiaofan.github.io/2019/first-blog/</guid>
-      <description>markdown的使用 MdEditor的功能列表演示 标题H1 标题H2 标题H3 标题H4 标题H5 标题H5 字符效果和横线等 删除线 删除线（开启识别HTML标签时）
+      <description>markdown快捷键 MdEditor的功能列表演示 标题H1 标题H2 标题H3 标题H4 标题H5 标题H5 字符效果和横线等 删除线 删除线（开启识别HTML标签时）
 斜体字 斜体字
 粗体 粗体
 粗斜体 粗斜体

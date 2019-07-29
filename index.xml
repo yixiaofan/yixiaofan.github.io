@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>钢铁工厂 on 钢铁工厂</title>
+    <title>机器工厂 on 机器工厂</title>
     <link>https://yixiaofan.github.io/</link>
-    <description>Recent content in 钢铁工厂 on 钢铁工厂</description>
+    <description>Recent content in 机器工厂 on 机器工厂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 27 Jul 2019 00:00:00 +0000</lastBuildDate>
@@ -121,6 +121,10 @@ $ cd themes
 $ git clone https://github.com/spf13/hyde.git
 &lt;/pre&gt;
 
+&lt;h2 id=&#34;修改主题&#34;&gt;修改主题&lt;/h2&gt;
+
+&lt;h4 id=&#34;打开-themes-目录下该主题下的-examplesite-config-toml-文件-把该文件中的相关信息复制到你的博客根目录-如-myblog-下的config-toml中-根据需要把内容修改成自己的信息&#34;&gt;打开&lt;code&gt;themes&lt;/code&gt;目录下该主题下的&lt;code&gt;exampleSite/config.toml&lt;/code&gt;文件，把该文件中的相关信息复制到你的博客根目录(如&lt;code&gt;myblog&lt;/code&gt;)下的config.toml中，根据需要把内容修改成自己的信息。&lt;/h4&gt;
+
 &lt;h2 id=&#34;运行hugo&#34;&gt;运行Hugo&lt;/h2&gt;
 
 &lt;h4 id=&#34;在你的站点根目录执行-font-color-aa4444-hugo-font-命令进行调试&#34;&gt;在你的站点根目录执行 &lt;font color=#aa4444&gt;&lt;code&gt;Hugo&lt;/code&gt;&lt;/font&gt; 命令进行调试：&lt;/h4&gt;
@@ -183,14 +187,14 @@ $ git push -u origin master
     </item>
     
     <item>
-      <title>Spring Boot实战合集</title>
+      <title>markdown基本语法</title>
       <link>https://yixiaofan.github.io/2019/first-blog/</link>
       <pubDate>Fri, 05 Jul 2019 10:01:01 +0800</pubDate>
       
       <guid>https://yixiaofan.github.io/2019/first-blog/</guid>
       <description>
 
-&lt;h1 id=&#34;markdown的使用&#34;&gt;markdown的使用&lt;/h1&gt;
+&lt;h2 id=&#34;markdown快捷键&#34;&gt;markdown快捷键&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://yixiaofan.github.io/markdown.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 

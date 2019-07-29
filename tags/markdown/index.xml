@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>知识点滴 on 机器工厂</title>
-    <link>https://yixiaofan.github.io/categories/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%BB%B4/</link>
-    <description>Recent content in 知识点滴 on 机器工厂</description>
+    <title>markdown on 机器工厂</title>
+    <link>https://yixiaofan.github.io/tags/markdown/</link>
+    <description>Recent content in markdown on 机器工厂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jul 2019 10:01:01 +0800</lastBuildDate>
     
-	<atom:link href="https://yixiaofan.github.io/categories/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%BB%B4/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yixiaofan.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>使用hugo搭建个人博客</title>
-      <link>https://yixiaofan.github.io/2019/hugo-blog/</link>
-      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yixiaofan.github.io/2019/hugo-blog/</guid>
-      <description>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
- 二进制安装（推荐：简单、快速） 到 Hugo Releases 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe） Mac下直接使用 Homebrew 安装：  brew install hugo  使用 hugo version 查看安装是否成功 生成站点 使用Hugo快速生成站点，打开cmd使用命令 cd /d ... 到你想创建的位置，再使用命令  $ hugo new site myblog  这样就在该目录下生成了初始站点,再在用cmd命令 cd myblog 进入目录 创建文章 创建一个 about 页面：  $ hugo new about.md  about.md 自动生成到了 content/about.md ，打开 about.md 看下：  +++ date = &#34;2019-06-25T08:36:54-07:00&#34; draft = true title = &#34;about&#34; +++ 正文内容  创建第一篇文章，放到 post 目录，方便之后生成聚合页面。  $ hugo new post/first.</description>
-    </item>
     
     <item>
       <title>markdown基本语法</title>
