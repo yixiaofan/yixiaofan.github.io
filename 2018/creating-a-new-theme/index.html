@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="易小凡">
+  
+  
+  
+  
+  <link rel="next" href="https://yixiaofan.github.io/2019/first-blog/" />
+  <link rel="canonical" href="https://yixiaofan.github.io/2018/creating-a-new-theme/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Creating a New Theme | 机器工厂
+       
+  </title>
+  <meta name="title" content="Creating a New Theme | 机器工厂">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/yixiaofan.github.io\/"
+    },
+    "articleSection" : "posts",
+    "name" : "Creating a New Theme",
+    "headline" : "Creating a New Theme",
+    "description" : "The Algorithms - Java \nNOTE: A Development branch is made for this repo where we are trying to migrate the existing project to a Java project structure. You can switch to Development branch for contributions. Please refer this issue for more info.\nAll algorithms implemented in Java (for education) These are for demonstration purposes only. There are many implementations of sorts in the Java standard library that are much better for performance reasons.",
+    "inLanguage" : "zh-cn",
+    "author" : "Michael Henderson",
+    "creator" : "Michael Henderson",
+    "publisher": "Michael Henderson",
+    "accountablePerson" : "Michael Henderson",
+    "copyrightHolder" : "Michael Henderson",
+    "copyrightYear" : "2018",
+    "datePublished": "2018-09-28 00:00:00 \x2b0000 UTC",
+    "dateModified" : "2018-09-28 00:00:00 \x2b0000 UTC",
+    "url" : "https:\/\/yixiaofan.github.io\/2018\/creating-a-new-theme\/",
+    "wordCount" : "984",
+    "keywords" : [ "Theme","Hugo", "机器工厂"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://yixiaofan.github.io/">机器工厂</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://yixiaofan.github.io/">机器工厂</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Creating a New Theme</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://yixiaofan.github.io/" rel="author">Michael Henderson</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2018-09-28 itemprop="datePublished">September 28, 2018</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://yixiaofan.github.io/categories/%E8%8D%89%E7%A8%BF%E7%AE%B1/"> 草稿箱 </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<h1 id="the-algorithms-java">The Algorithms - Java</h1>
+
+<p><a href="https://www.paypal.me/TheAlgorithms/100" rel="nofollow noreferrer" target="_blank"><figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate" class="lazyload"><figcaption class="image-caption">Donate</figcaption></figure></a></p>
+
+<p>NOTE: A <a href="https://github.com/TheAlgorithms/Java/tree/Development" rel="nofollow noreferrer" target="_blank">Development</a> branch is made for this repo where we are trying to migrate the existing project to a Java project structure. You can switch to <a href="https://github.com/TheAlgorithms/Java/tree/Development" rel="nofollow noreferrer" target="_blank">Development</a> branch for contributions. Please refer <a href="https://github.com/TheAlgorithms/Java/issues/474" rel="nofollow noreferrer" target="_blank">this issue</a> for more info.</p>
+
+<h3 id="all-algorithms-implemented-in-java-for-education">All algorithms implemented in Java (for education)</h3>
+
+<p>These are for demonstration purposes only. There are many implementations of sorts in the Java standard library that are much better for performance reasons.</p>
+
+<h2 id="sort-algorithms">Sort Algorithms</h2>
+
+<h3 id="bubble">Bubble</h3>
+
+<p><figure><img src="/images/ring.svg" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bubblesort-edited-color.svg/220px-Bubblesort-edited-color.svg.png" data-sizes="auto" alt="alt text" title="Bubble Sort" class="lazyload"><figcaption class="image-caption">alt text</figcaption></figure></p>
+
+<p>From <a href="https://en.wikipedia.org/wiki/Bubble_sort" rel="nofollow noreferrer" target="_blank">Wikipedia</a>: Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.</p>
+
+<p><strong>Properties</strong>
+* Worst case performance    O(n^2)
+* Best case performance    O(n)
+* Average case performance    O(n^2)</p>
+
+<h5 id="view-the-algorithm-in-action-bubble-toptal">View the algorithm in <a href="https://www.toptal.com/developers/sorting-algorithms/bubble-sort" rel="nofollow noreferrer" target="_blank">action</a></h5>
+
+<h3 id="insertion">Insertion</h3>
+
+<p><figure><img src="/images/ring.svg" data-src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Insertionsort-edited.png" data-sizes="auto" alt="alt text" title="Insertion Sort" class="lazyload"><figcaption class="image-caption">alt text</figcaption></figure></p>
+
+<p>From <a href="https://en.wikipedia.org/wiki/Insertion_sort" rel="nofollow noreferrer" target="_blank">Wikipedia</a>: Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+In the figure, each bar represents an element of an array that needs to be sorted. What happens at the first intersection of the top most and second top most bars is to swap these elements, represented by bars, because the second element has a higher precedence than the first element does. By repeating this method, insertion sort completes sorting.</p>
+
+<p><strong>Properties</strong>
+* Worst case performance    O(n^2)
+* Best case performance    O(n)
+* Average case performance    O(n^2)</p>
+
+<h5 id="view-the-algorithm-in-action-insertion-toptal">View the algorithm in <a href="https://www.toptal.com/developers/sorting-algorithms/insertion-sort" rel="nofollow noreferrer" target="_blank">action</a></h5>
+
+<h3 id="merge">Merge</h3>
+
+<p><figure><img src="/images/ring.svg" data-src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" data-sizes="auto" alt="alt text" title="Merge Sort" class="lazyload"><figcaption class="image-caption">alt text</figcaption></figure></p>
+
+<p>From <a href="https://en.wikipedia.org/wiki/Merge_sort" rel="nofollow noreferrer" target="_blank">Wikipedia</a>: In computer science, merge sort (also commonly spelt mergesort) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the implementation preserves the input order of equal elements in the sorted output. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.</p>
+
+<p><strong>Properties</strong>
+* Worst case performance    O(n log n) (typical)
+* Best case performance    O(n log n)
+* Average case performance    O(n log n)</p>
+
+<h5 id="view-the-algorithm-in-action-merge-toptal">View the algorithm in <a href="https://www.toptal.com/developers/sorting-algorithms/merge-sort" rel="nofollow noreferrer" target="_blank">action</a></h5>
+
+<h3 id="quick">Quick</h3>
+
+<p><figure><img src="/images/ring.svg" data-src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif" data-sizes="auto" alt="alt text" title="Quick Sort" class="lazyload"><figcaption class="image-caption">alt text</figcaption></figure></p>
+
+<p>From <a href="https://en.wikipedia.org/wiki/Quicksort" rel="nofollow noreferrer" target="_blank">Wikipedia</a>: Quicksort (sometimes called partition-exchange sort) is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order.</p>
+
+<p><strong>Properties</strong>
+* Worst case performance    O(n^2)
+* Best case performance    O(n log n) or O(n) with three-way partition
+* Average case performance    O(n log n)</p>
+
+<h5 id="view-the-algorithm-in-action-quick-toptal">View the algorithm in <a href="https://www.toptal.com/developers/sorting-algorithms/quick-sort" rel="nofollow noreferrer" target="_blank">action</a></h5>
+
+<h3 id="selection">Selection</h3>
+
+<p><figure><img src="/images/ring.svg" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Selection_sort_animation.gif/250px-Selection_sort_animation.gif" data-sizes="auto" alt="alt text" title="Selection Sort Sort" class="lazyload"><figcaption class="image-caption">alt text</figcaption></figure></p>
+
+<p>From <a href="https://en.wikipedia.org/wiki/Selection_sort" rel="nofollow noreferrer" target="_blank">Wikipedia</a>: The algorithm divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.</p>
+
+<p><strong>Properties</strong>
+* Worst case performance    O(n^2)
+* Best case performance    O(n^2)
+* Average case performance    O(n^2)</p>
+
+<h5 id="view-the-algorithm-in-action-selection-toptal">View the algorithm in <a href="https://www.toptal.com/developers/sorting-algorithms/selection-sort" rel="nofollow noreferrer" target="_blank">action</a></h5>
+
+<h3 id="shell">Shell</h3>
+
+<p><figure><img src="/images/ring.svg" data-src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif" data-sizes="auto" alt="alt text" title="Shell Sort" class="lazyload"><figcaption class="image-caption">alt text</figcaption></figure></p>
+
+<p>From <a href="https://en.wikipedia.org/wiki/Shellsort" rel="nofollow noreferrer" target="_blank">Wikipedia</a>:  Shellsort is a generalization of insertion sort that allows the exchange of items that are far apart.  The idea is to arrange the list of elements so that, starting anywhere, considering every nth element gives a sorted list.  Such a list is said to be h-sorted.  Equivalently, it can be thought of as h interleaved lists, each individually sorted.</p>
+
+<p><strong>Properties</strong>
+* Worst case performance O(nlog2 2n)
+* Best case performance O(n log n)
+* Average case performance depends on gap sequence</p>
+
+<h5 id="view-the-algorithm-in-action-shell-toptal">View the algorithm in <a href="https://www.toptal.com/developers/sorting-algorithms/shell-sort" rel="nofollow noreferrer" target="_blank">action</a></h5>
+
+<h3 id="time-complexity-graphs">Time-Complexity Graphs</h3>
+
+<p>Comparing the complexity of sorting algorithms (Bubble Sort, Insertion Sort, Selection Sort)</p>
+
+<p><a href="https://github.com/prateekiiest/Python/blob/master/sorts/sortinggraphs.png" rel="nofollow noreferrer" target="_blank">Complexity Graphs</a></p>
+
+<hr />
+
+<h2 id="search-algorithms">Search Algorithms</h2>
+
+<h3 id="linear">Linear</h3>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="http://www.tutorialspoint.com/data_structures_algorithms/images/linear_search.gif" alt="alt text" class="lazyload"><figcaption class="image-caption">alt text</figcaption></figure></p>
+
+<p>From <a href="https://en.wikipedia.org/wiki/Linear_search" rel="nofollow noreferrer" target="_blank">Wikipedia</a>: linear search or sequential search is a method for finding a target value within a list. It sequentially checks each element of the list for the target value until a match is found or until all the elements have been searched.
+  The linear search runs in at the worst linear time and makes at most n comparisons, where n is the length of the list.</p>
+
+<p><strong>Properties</strong>
+* Worst case performance    O(n)
+* Best case performance    O(1)
+* Average case performance    O(n)
+* Worst case space complexity    O(1) iterative</p>
+
+<h5 id="view-the-algorithm-in-action-linear-tutorialspoint">View the algorithm in <a href="https://www.tutorialspoint.com/data_structures_algorithms/linear_search_algorithm.htm" rel="nofollow noreferrer" target="_blank">action</a></h5>
+
+<h3 id="binary">Binary</h3>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Binary_search_into_array.png" alt="alt text" class="lazyload"><figcaption class="image-caption">alt text</figcaption></figure></p>
+
+<p>From <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm" rel="nofollow noreferrer" target="_blank">Wikipedia</a>: Binary search, also known as half-interval search or logarithmic search, is a search algorithm that finds the position of a target value within a sorted array. It compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful.</p>
+
+<p><strong>Properties</strong>
+* Worst case performance    O(log n)
+* Best case performance    O(1)
+* Average case performance    O(log n)
+* Worst case space complexity    O(1)</p>
+
+<h5 id="view-the-algorithm-in-action-binary-tutorialspoint">View the algorithm in <a href="https://www.tutorialspoint.com/data_structures_algorithms/binary_search_algorithm.htm" rel="nofollow noreferrer" target="_blank">action</a></h5>
+
+<hr />
+
+<h2 id="links-to-the-rest-of-the-algorithms">Links to the rest of the algorithms</h2>
+
+<table>
+<thead>
+<tr>
+<th>Conversions</th>
+<th>Dynamic Programming</th>
+<th>Ciphers</th>
+<th>Miscellaneous</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="Conversions/AnyBaseToAnyBase.java" rel="nofollow noreferrer" target="_blank">Any Base to Any Base</a></td>
+<td><a href="Dynamic%20Programming/CoinChange.java" rel="nofollow noreferrer" target="_blank">Coin Change</a></td>
+<td><a href="ciphers/Caesar.java" rel="nofollow noreferrer" target="_blank">Caesar</a></td>
+<td><a href="misc/heap_sort.java" rel="nofollow noreferrer" target="_blank">Heap Sort</a></td>
+</tr>
+
+<tr>
+<td><a href="Conversions/AnyBaseToDecimal.java" rel="nofollow noreferrer" target="_blank">Any Base to Decimal</a></td>
+<td><a href="Dynamic%20Programming/EggDropping.java" rel="nofollow noreferrer" target="_blank">Egg Dropping</a></td>
+<td><a href="ciphers/ColumnarTranspositionCipher.java" rel="nofollow noreferrer" target="_blank">Columnar Transposition Cipher</a></td>
+<td><a href="misc/PalindromicPrime.java" rel="nofollow noreferrer" target="_blank">Palindromic Prime Checker</a></td>
+</tr>
+
+<tr>
+<td><a href="Conversions/BinaryToDecimal.java" rel="nofollow noreferrer" target="_blank">Binary to Decimal</a></td>
+<td><a href="Dynamic%20Programming/Fibonacci.java" rel="nofollow noreferrer" target="_blank">Fibonacci</a></td>
+<td><a href="ciphers/RSA.java" rel="nofollow noreferrer" target="_blank">RSA</a></td>
+<td>More soon&hellip;</td>
+</tr>
+
+<tr>
+<td><a href="Conversions/BinaryToHexadecimal.java" rel="nofollow noreferrer" target="_blank">Binary to HexaDecimal</a></td>
+<td><a href="Dynamic%20Programming/KadaneAlgorithm.java" rel="nofollow noreferrer" target="_blank">Kadane Algorithm</a></td>
+<td>more coming soon&hellip;</td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="Conversions/BinaryToOctal.java" rel="nofollow noreferrer" target="_blank">Binary to Octal</a></td>
+<td><a href="Dynamic%20Programming/Knapsack.java" rel="nofollow noreferrer" target="_blank">Knapsack</a></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="Conversions/DecimalToAnyBase.java" rel="nofollow noreferrer" target="_blank">Decimal To Any Base</a></td>
+<td><a href="Dynamic%20Programming/LongestCommonSubsequence.java" rel="nofollow noreferrer" target="_blank">Longest Common Subsequence</a></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="Conversions/DecimalToBinary.java" rel="nofollow noreferrer" target="_blank">Decimal To Binary</a></td>
+<td><a href="Dynamic%20Programming/LongestIncreasingSubsequence.java" rel="nofollow noreferrer" target="_blank">Longest Increasing Subsequence</a></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="Conversions/DecimalToHexaDecimal.java" rel="nofollow noreferrer" target="_blank">Decimal To Hexadecimal</a></td>
+<td><a href="Dynamic%20Programming/RodCutting.java" rel="nofollow noreferrer" target="_blank">Rod Cutting</a></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>and much more&hellip;</td>
+<td>and more&hellip;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="data-structures">Data Structures</h3>
+
+<table>
+<thead>
+<tr>
+<th>Graphs</th>
+<th>Heaps</th>
+<th>Lists</th>
+<th>Queues</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="DataStructures/Graphs/BFS.java" rel="nofollow noreferrer" target="_blank">BFS</a></td>
+<td><a href="DataStructures/Heaps/EmptyHeapException.java" rel="nofollow noreferrer" target="_blank">Empty Heap Exception</a></td>
+<td><a href="DataStructures/Lists/CircleLinkedList.java" rel="nofollow noreferrer" target="_blank">Circle Linked List</a></td>
+<td><a href="DataStructures/Queues/GenericArrayListQueue.java" rel="nofollow noreferrer" target="_blank">Generic Array List Queue</a></td>
+</tr>
+
+<tr>
+<td><a href="DataStructures/Graphs/DFS.java" rel="nofollow noreferrer" target="_blank">DFS</a></td>
+<td><a href="DataStructures/Heaps/Heap.java" rel="nofollow noreferrer" target="_blank">Heap</a></td>
+<td><a href="DataStructures/Lists/DoublyLinkedList.java" rel="nofollow noreferrer" target="_blank">Doubly Linked List</a></td>
+<td><a href="DataStructures/Queues/Queues.java" rel="nofollow noreferrer" target="_blank">Queues</a></td>
+</tr>
+
+<tr>
+<td><a href="DataStructures/Graphs/Graphs.java" rel="nofollow noreferrer" target="_blank">Graphs</a></td>
+<td><a href="DataStructures/Heaps/HeapElement.java" rel="nofollow noreferrer" target="_blank">Heap Element</a></td>
+<td><a href="DataStructures/Lists/SinglyLinkedList.java" rel="nofollow noreferrer" target="_blank">Singly Linked List</a></td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="DataStructures/Graphs/KruskalsAlgorithm.java" rel="nofollow noreferrer" target="_blank">Kruskals Algorithm</a></td>
+<td><a href="DataStructures/Heaps/MaxHeap.java" rel="nofollow noreferrer" target="_blank">Max Heap</a></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="DataStructures/Lists/CursorLinkedList.java" rel="nofollow noreferrer" target="_blank">CursorLinkedList</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="DataStructures/Graphs/MatrixGraphs.java" rel="nofollow noreferrer" target="_blank">Matrix Graphs</a></td>
+<td><a href="DataStructures/Heaps/MinHeap.java" rel="nofollow noreferrer" target="_blank">Min Heap</a></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="DataStructures/Graphs/PrimMST.java" rel="nofollow noreferrer" target="_blank">PrimMST</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>Stacks</th>
+<th>Trees</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="DataStructures/Stacks/NodeStack.java" rel="nofollow noreferrer" target="_blank">Node Stack</a></td>
+<td><a href="DataStructures/Trees/AVLTree.java" rel="nofollow noreferrer" target="_blank">AVL Tree</a></td>
+</tr>
+
+<tr>
+<td><a href="DataStructures/Stacks/StackOfLinkedList.java" rel="nofollow noreferrer" target="_blank">Stack of Linked List</a></td>
+<td><a href="DataStructures/Trees/BinaryTree.java" rel="nofollow noreferrer" target="_blank">Binary Tree</a></td>
+</tr>
+
+<tr>
+<td><a href="DataStructures/Stacks/StackArray.java" rel="nofollow noreferrer" target="_blank">Array Stack</a></td>
+<td>And much more&hellip;</td>
+</tr>
+
+<tr>
+<td><a href="DataStructures/Stacks/StackArrayList.java" rel="nofollow noreferrer" target="_blank">ArrayList Stack</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li><a href="DataStructures/Bags/Bag.java" rel="nofollow noreferrer" target="_blank">Bags</a></li>
+<li><a href="DataStructures/Buffers/CircularBuffer.java" rel="nofollow noreferrer" target="_blank">Buffer</a></li>
+<li><a href="DataStructures/HashMap/Hashing/HashMap.java" rel="nofollow noreferrer" target="_blank">HashMap</a></li>
+<li><a href="DataStructures/Matrix/Matrix.java" rel="nofollow noreferrer" target="_blank">Matrix</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>易小凡 </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://yixiaofan.github.io/2018/creating-a-new-theme/>https://yixiaofan.github.io/2018/creating-a-new-theme/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://yixiaofan.github.io/tags/theme/">
+                    #Theme</a></span>
+            
+            <span class="tag"><a href="https://yixiaofan.github.io/tags/hugo/">
+                    #Hugo</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://yixiaofan.github.io/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+         
+        
+        <a href="https://yixiaofan.github.io/2019/first-blog/" class="next" rel="next" title="markdown基本语法">markdown基本语法&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2018 - 2019</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://yixiaofan.github.io/">易小凡</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

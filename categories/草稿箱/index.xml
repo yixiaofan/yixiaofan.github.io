@@ -6,17 +6,17 @@
     <description>Recent content in 草稿箱 on 机器工厂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yixiaofan.github.io/categories/%E8%8D%89%E7%A8%BF%E7%AE%B1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating a New Theme</title>
-      <link>https://yixiaofan.github.io/2014/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <link>https://yixiaofan.github.io/2018/creating-a-new-theme/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://yixiaofan.github.io/2014/creating-a-new-theme/</guid>
+      <guid>https://yixiaofan.github.io/2018/creating-a-new-theme/</guid>
       <description>The Algorithms - Java 
 NOTE: A Development branch is made for this repo where we are trying to migrate the existing project to a Java project structure. You can switch to Development branch for contributions. Please refer this issue for more info.
 All algorithms implemented in Java (for education) These are for demonstration purposes only. There are many implementations of sorts in the Java standard library that are much better for performance reasons.</description>
